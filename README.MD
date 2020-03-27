@@ -20,7 +20,7 @@ You can find my configs for these in my dotfiles repo [here](https://github.com/
 #### Themes:
 How to use: 
 **YOU WILL NEED TO RESTART FIREFOX FOR THESE CHANGES TO TAKE EFFECT**
-- in `userChrome.css` comment the active theme (`@import /path/to/theme.css`) and uncomment your preffered theme.
+- in `userChrome.css` comment the active theme (`@import /path/to/theme.css`) and uncomment your preferred theme.
 - Restart Firefox
 
 Available Themes:
