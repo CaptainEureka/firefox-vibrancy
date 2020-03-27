@@ -1,0 +1,44 @@
+/* URL BAR */
+#urlbar, #searchbar {
+    background-color: var(--url-mask-color) !important;
+    border-radius: var(--urlbar-rounding) !important;
+    border-style: none !important;
+    padding: 2px 2px 2px 2px !important;
+    margin-bottom: 1px !important;
+}
+
+
+#urlbar-input {
+	caret-color: white !important;
+    text-align: center !important;
+}
+
+.urlbarView::before {
+    display: none !important;
+    border: none !important;
+}
+
+.urlbarView {
+    border: 1px solid rgba(255,255,255,0.075) !important;
+}
+
+.urlbarView {
+    background-image: url(assets/noise-512x512.png) !important;
+    background-color: var(--urlview-color) !important;
+    backdrop-filter: blur(32px) !important;
+	border-radius: 0 0 var(--inputbar-rounding) var(--inputbar-rounding) !important;
+}
+
+#urlbar-background{
+    display: none !important;
+}
+
+.urlbarView-favicon {
+    display: None !important;   
+}
+
+.urlbarView-title,
+.urlbarView-url {
+	text-overflow: ellipsis !important;
+	mask-image: none !important;
+}

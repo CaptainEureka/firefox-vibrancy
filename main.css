@@ -1,0 +1,69 @@
+* { 
+    /* -------------------- Customization -------------------- */
+    --tab-corner-rounding:      10px;
+    --urlbar-rounding:          25px;
+    --inputbar-rounding:        25px;
+}
+
+#titlebar, window, #main-window, #toolbar-menubar, #TabsToolbar, #PersonalToolbar, #navigator-toolbox{
+    background: transparent !important;
+    -moz-appearance: none !important;
+    background-image: none !important;
+}r 
+
+#titlebar {
+    -moz-box-ordinal-group: 1 !important;
+    border-top-color: transparent !important;
+    border-bottom-color: transparent !important;
+}
+
+#main-window{
+    background-image: none !important;
+    background-color: transparent !important;
+}
+
+#toolbar-menubar{
+    -moz-box-ordinal-group: 0 !important;
+    border-top: solid 0px !important;
+    border-bottom: solid 0px !important;
+    background-color: var(--main-tab-bg-color) !important;
+    position: relative !important;
+    padding: 6px 0px 6px 0px !important;
+}
+
+#PersonalToolbar{
+    background-color: transparent !important;
+    background-image: none !important;
+    position: relative !important;
+}
+
+/* Hide Tracking Protection */
+#tracking-protection-icon-boc {
+    display: none !important;;
+    border-color: transparent !important;
+}
+
+#tracking-protection-icon-container,
+#pageActionSeparator {
+    display: none !important;
+    border-inline-width: 0px !important;
+}
+
+/* Hide Bookmark Star */
+.urlbarView-row[type="bookmark"] .urlbarView-type-icon {
+    display: none !important;
+}
+
+/* Hide Page Actions */
+#page-action-buttons {
+    display: none !important;
+}
+
+/* Custom back and forward buttons */
+#back-button {
+    list-style-image: url("assets/left-arrow.svg") !important;
+}
+
+#forward-button {
+    list-style-image: url("assets/right-arrow.svg") !important;
+}

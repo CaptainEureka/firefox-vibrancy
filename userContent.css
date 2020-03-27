@@ -1,0 +1,22 @@
+@import "themes/firefox.css";
+
+/* Removes white loading page */
+
+@-moz-document url(about:blank), url(about:newtab), url(about:home) url(about:preferences){
+    html:not(#ublock0-epicker), html:not(#ublock0-epicker) body, #newtab-customize-overlay {
+      background: var(--main-nav-bar-bg-color) !important;
+    }
+  }
+  
+  /* Hide scrollbar */
+  
+  :root{
+    scrollbar-width: none !important;
+  }
+  
+  @-moz-document url(about:privatebrowsing) { 
+  
+  :root{
+    scrollbar-width: none !important;
+  }
+  }
