@@ -17,14 +17,6 @@ Coming soon!
 
 
 #### Themes:
-- Dark:
-![](assets/screenshots/2704-ff-dark-theme.png)
-
-- Light (WIP):
-![](assets/screenshots/2704-ff-light-theme.png)
-
-- Breeze-Dark (matches the Breeze-Dark Plasma theme):
-![](assets/screenshots/2704-ff-breeze-dark-theme.png)
-
-- Pywal (fetches colors from wallpaper using [pywal](https://github.com/dylanaraps/pywal)):
-![](assets/screenshots/2704-ff-pywal-theme.png)
+| Dark | Light | Breeze-Dark | Pywal |
+| ---- | ----- | ----------- | ----- |
+|![](assets/screenshots/2704-ff-dark-theme.png) | ![](assets/screenshots/2704-ff-light-theme.png) | ![](assets/screenshots/2704-ff-breeze-dark-theme.png) | ![](assets/screenshots/2704-ff-pywal-theme.png) |
