@@ -19,12 +19,12 @@
 @import url(themes/firefox.css);
 
 /* MAIN CSS CUSTOMIZATION*/
-@import url(main.css);
-@import url(navbar.css);
-@import url(urlbar-new.css);
-/* @import url(urlbar.css); */
-/*@import url(urlpopup-like-chrome.css);*/
-@import url(tabbar.css);
-@import url(sidebar.css);
-/* @import url(menus.css); */
-/* @import url(hide-only-one-tab.css); */
+@import url(configuration/main.css);
+@import url(configuration/navbar.css);
+@import url(configuration/urlbar-new.css);
+/* @import url(configuration/urlbar.css); */
+/*@import url(configuration/urlpopup-like-chrome.css);*/
+@import url(configuration/tabbar.css);
+@import url(configuration/sidebar.css);
+/* @import url(configuration/menus.css); */
+/* @import url(configuration/hide-only-one-tab.css); */
