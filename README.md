@@ -16,7 +16,7 @@ You can find my configs for these in my dotfiles repo [here](https://github.com/
 #### Instructions:
 1. Clone or download this repo and copy it into your Firefox profile directory usually located at `$HOME/.mozilla/your-firefox-profile/chrome` if this directory does not exist create it. You can also find your profile directory in `about:support` just type it into the urlbar. (*I will update with a single command to do this in the future*)
 2. In `about:config` set `toolkit.legacyUserProfileCustomizations.stylesheets` to `true` if it's not their add it.
-3. In `about:config` set `gfx.webrender.all` to `true` this is for the blur backdrop filter on the url dropdown to work.
+3. In `about:config` set `gfx.webrender.all` and `layout.css.backdrop-filter.enable` to `true` this is for the blur backdrop filter on the url dropdown to work.
 4. Restart Firefox.
 
 
@@ -34,5 +34,5 @@ Available Themes:
 
 **Please NOTE**: 
 This setup is only possible on Linux and I have neither the time nor the ability to port this to Windows or MacOS. I made this for my own personal use and give no guarantee that it will work on your system. 
-Tested and functioning as of `firefox-beta-75.0b9` on 27-03-2020.
+Tested and functioning as of `firefox-beta-75.0` on 07-04-2020.
 
