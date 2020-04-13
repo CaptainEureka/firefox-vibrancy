@@ -1,7 +1,6 @@
 
 /* TAB BAR */
 #TabsToolbar {
-    min-height: 40px !important;
     position: absolute !important;
     background-color: var(--main-tab-bg-color) !important;
 }
@@ -29,18 +28,6 @@
     align-items: center !important;
 }
 
-/* Lower and Color Tab Line */
-.tab-background {
-    -moz-box-direction: reverse !important;
-}
-
-.tabbrowser-tab .tab-line[selected="true"] {
-    margin-right: 0px !important;
-    margin-left: 0px !important;
-    height: 10px !important;
-    background-color: red !important;
-}
-
 /* Full Tab Width and Animation (a bit hacked) */
 .tabbrowser-tab[fadein]:not([pinned]) {
     max-width: 9999px !important;
@@ -62,19 +49,19 @@
 }
 
 .tab-text:not([selected]) {
-    color: gray !important;
+    filter: brightness(80%) !important;
 }
 
 .tabbrowser-tab {
     position: relative !important;
     border-bottom: 3px !important;
-    min-height: 40px !important;
+    min-height: 30px !important;
     min-width: 100px !important;
 }
 
 .tabbrowser-tab[pinned] {
-    min-width: 40px !important;
-    max-width: 40px !important;
+    max-width: 20px !important;
+    min-width: 30px !important;
 }
 
 .tabbrowser-tab[selected="true"],
@@ -86,6 +73,7 @@
 
 .tabbrowser-tab:not([selected="true"]) {
     box-shadow: var(--tabbar-shadow) !important;
+    background-color: var(--tab-inactive-bg) !important;
 }
 
 .tab-close-button {
