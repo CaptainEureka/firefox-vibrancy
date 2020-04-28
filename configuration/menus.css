@@ -1,24 +1,54 @@
-menupopup,
-#context-navigation,
-#appMenu-popup #appMenu-mainView,
-.panel-arrowcontainer,
-panelview {
-   background-color: var(--main-tab-bg-color) !important;
-   border: 0px !important;
-   border-radius: 10px !important;
+/* Popup Background & Text Color */
+.PanelUI-subView {
+  --arrowpanel-background: var(--main-bg-color) !important;
+  --arropanel-color: #C8D3F5 !important;
+  --lwt-accent-color: #131421 !important;
+  --lwt-text-color: #C8D3F5 !important;
+  color: #C8D3F5 !important;
 }
 
-.panel-arrowcontainer {
-    margin: 0px -3px -3px -3px !important;
+/* Hide Non-Required Options */
+#appMenu-fxa-status,
+.sync-ui-item,
+#appMenu-new-window-button {
+  display: none !important;
 }
 
 .panel-arrowcontent, {
-    margin: 0 !important;
-    opacity: 1 !important;
+  border-radius: 8px !important;
+  margin-top: 8px !important;
 }
 
 .panel-arrowbox {
-    margin: 0 !important;
-    display: none !important;
+  fill: #131421 !important;
+  display: none !important;
 }
 
+.subviewbutton:hover,
+.subviewbutton:active,
+.subviebutton:focus {
+  background-color: #383e5c !important;
+  transition: background-color 100ms ease-out !important;
+}
+
+#appMenu-library0button .toolbarbutton-icon {
+  fill: #C8D3F5 !important;
+}
+
+menupopup > menuitem:last-child {
+  border-bottom-right-radius: 5px !important;
+  border-bottom-left-radius: 5px !important;
+}
+
+menupopup > menuitem,
+#context-navigation {
+  color: #C8D3F5 !important;
+}
+
+menupopup > menuitem:hover,
+menupopup > menuitem:focus,
+menupopup > menuitem:active,
+#context-navigation {
+  background-color: #131421 !important;
+}
+menupopup > menuitem:active,

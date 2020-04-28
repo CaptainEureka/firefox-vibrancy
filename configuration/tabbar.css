@@ -1,86 +1,88 @@
 
 /* TAB BAR */
 #TabsToolbar {
-    position: absolute !important;
-    background-color: var(--main-tab-bg-color) !important;
+  min-height: 32px !important;
+  position: absolute !important;
+  background-color: var(--main-bg-color) !important;
 }
 
 #TabsToolbar::before,
-#TabsToolbar::after {
-    border: 0px !important;
-    display: none !important;
-}
-
+#TabsToolbar::after,
 .tab-background,
 .tabbrowser-tab::before,
 .tabbrowser-tab::after {
-    display: none !important;
+  display: none !important;
 }
 
-/* Hide Tab Icon non pinned tabs */
-.tabbrowser-tab:not([pinned]) .tab-icon-image {
-    display: none !important;
-}
-
-.tabbrowser-tab[pinned="true"] .tab-icon-image {
-    height: 15px !important;
-    width: 15px !important;
-    align-items: center !important;
-}
-
-/* Full Tab Width and Animation (a bit hacked) */
-.tabbrowser-tab[fadein]:not([pinned]) {
-    max-width: 9999px !important;
-    transition: max-width 100ms ease-in-out !important;
-}
-
-/* Center Tab Text */
-.tab-text {
-    -moz-box-flex: 1 !important;
-    text-align: center !important;
-}
-
-.tab-text[pinned] {
-    display: none !important;
-}
-
-.tab-text[selected] {
-    font-weight: bold !important;
-}
-
-.tab-text:not([selected]) {
-    filter: brightness(80%) !important;
-}
-
+/* Main Tab Customization */
 .tabbrowser-tab {
-    position: relative !important;
-    border-bottom: 3px !important;
-    min-height: 30px !important;
-    min-width: 100px !important;
-}
-
-.tabbrowser-tab[pinned] {
-    max-width: 20px !important;
-    min-width: 30px !important;
+  position: relative !important;
+  min-height: 32px !important;
+  min-width: 100px !important;
+  transition: all 150ms ease !important;
 }
 
 .tabbrowser-tab[selected="true"],
-.tabbrowser-tab[selected="true"]:hover {
-    border-radius: 0 0 var(--tab-corner-rounding) var(--tab-corner-rounding) !important;
-    box-shadow: var(--tabbar-shadow-selected) !important;
+.tabbrowser-tab[selected="true"]:hover,
+.tabbrowser-tab[multiselected],
+.tabbrowser-tab[visuallyselecetd="true"] {
+  border-radius: 0px 0px var(--tab-corner-rounding) var(--tab-corner-rounding) !important;
+  box-shadow: var(--tabbar-shadow-selected) !important;
 
 }
 
 .tabbrowser-tab:not([selected="true"]) {
-    box-shadow: var(--tabbar-shadow) !important;
-    background-color: var(--tab-inactive-bg) !important;
+  box-shadow: var(--tabbar-shadow) !important;
+  background-color: var(--tab-inactive-bg) !important;
 }
 
-.tab-close-button {
-    display: none !important;
+/* Hide Tab Favicon for not pinned tabs */
+.tabbrowser-tab:not([pinned]) .tab-icon-image {
+  display: none !important;
 }
 
-/* Hide New Tab Button */
-#tabs-newtab-button, #new-tab-button {
-    display: none !important;
+/* Pinned tabs */
+.tabbrowser-tab[pinned="true"] .tab-icon-image {
+  align-items: center !important;
+  display: inline-block !important;
+  min-height: var(--pinned-tab-favicon-dim) !important;
+  min-width: var(--pinned-tab-favicon-dim) !important;
 }
+
+.tabbrowser-tab[pinned="true"] {
+  min-width: 32px !important;
+}
+
+.tab-text[pinned="true"] {
+  display: none !important;
+}
+
+/* Center Tab Text */
+.tab-text {
+  -moz-box-flex: 1 !important;
+  text-align: center !important;
+}
+
+.tab-text[selected] {
+  font-weight: var(--tab-active-font-weight) !important;
+}
+
+.tab-text:not([selected]) {
+  filter: brightness(80%) !important;
+  font-weight: var(--tab-inactive-font-weight) !important;
+}
+
+/* Hide New Tab and Tab Close Button */
+.tab-close-button,
+#tabs-newtab-button,
+#new-tab-button {
+  display: none !important;
+}
+
+/* Full Tab Width and Animation (a bit hacked) */
+.tabbrowser-tab[fadein]:not([pinned]) {
+  max-width: 9999px !important;
+  transition: max-width 150ms ease !important;
+}
+
+

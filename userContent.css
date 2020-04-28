@@ -1,22 +1,22 @@
-@import "themes/firefox.css";
-
 /* Removes white loading page */
 
 @-moz-document url(about:blank), url(about:newtab), url(about:home) url(about:preferences){
     html:not(#ublock0-epicker), html:not(#ublock0-epicker) body, #newtab-customize-overlay {
-      background: var(--main-nav-bar-bg-color) !important;
+        background: #222436 !important;
     }
-  }
-  
-  /* Hide scrollbar */
-  
-  :root{
-    scrollbar-width: none !important;
-  }
-  
-  @-moz-document url(about:privatebrowsing) { 
-  
-  :root{
-    scrollbar-width: none !important;
-  }
-  }
+}
+
+@-moz-document url-prefix("about:"),
+@-moz-document url-prefix("chrome://mozapps/content/extensions/aboutaddons.html") {
+	window,
+	page,
+	html,
+	.main-content,
+	scrollbar {
+		scrollbar-width: none !important;
+	}
+}
+/* for anywhere internal pages FF */
+* {
+	scrollbar-width: none !important;
+}

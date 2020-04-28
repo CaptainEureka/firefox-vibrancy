@@ -1,41 +1,57 @@
 /* URL BAR */
 #urlbar, #searchbar {
-    background-color: var(--url-mask-color) !important;
-    border-radius: var(--urlbar-rounding) !important;
-    border-style: none !important;
-    padding: 0px 2px 0px 2px !important;
-    min-height: 20px !important;
+  background-color: var(--url-active-color) !important;
+  border-radius: var(--urlbar-rounding) !important;
+  border-style: none !important;
+  transition: box-shadow 150ms ease !important;
 }
 
 #urlbar:hover {
-    box-shadow: var(--urlbar-shadow-open) !important;
-    transition: box-shadow 50ms linear 50ms;
+  box-shadow: var(--urlbar-shadow-open) !important;
 }
 
-#urlbar-input {
-	caret-color: white !important;
-    text-align: center !important;
-    font-size: 14px !important;
+#urlbar-container {
+  padding-block: 6px !important;
+}
+
+#urlbar-input-container {
+  height: calc(var(--navbar-height) - 6px) !important;
+  padding-block: 0px !important;
+  padding-inline: 0px !important;
+}
+
+input#urlbar-input {
+  caret-color: var(--text-color) !important;
+  text-align: center !important;
+  font-size: var(--url-font-size) !important;
+  font-weight: var(--url-font-weight) !important;
+  padding-inline: 10px !important;
 }
 
 .urlbarView::before {
-    border: none !important;
+  border: none !important;
 }
 
 .urlbarView {
-    background-image: url(assets/noise-512x512.png) !important;
-    background-color: var(--urlview-color) !important;
-    backdrop-filter: blur(32px) !important;
-	border: none !important;
-    border-radius: 0 0 var(--inputbar-rounding) var(--inputbar-rounding) !important;
+  background-image: url(../assets/noise-512x512.png) !important;
+  background-color: var(--urlview-color) !important;
+  backdrop-filter: blur(32px) !important;
+  border: none !important;
+  border-radius: 0 0 var(--inputbar-rounding) var(--inputbar-rounding) !important;
 }
 
 .urlbarView-favicon {
-    display: None !important;   
+  display: none !important;
 }
 
 .urlbarView-title,
 .urlbarView-url {
-	text-overflow: ellipsis !important;
-	mask-image: none !important;
+  text-overflow: ellipsis !important;
+  mask-image: none !important;
+}
+
+#identity-box,
+#identity-icon,
+#identity-icon-labels {
+  display: none !important;
 }

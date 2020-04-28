@@ -1,13 +1,47 @@
 /* SIDEBAR */
 
-#sidebar-box {
-    background-color: var(--main-tab-bg-color) !important;
-    border-right: 0px !important;
-    box-shadow: 0px !important;
+#sidebar-search-container,
+#historyTree
+.sidebar-placesTree
+#history-panel,
+.sidebar-panel {
+  background-color: transparent !important;
 }
 
-/* lock sidebar to specified width */
-#sidebar-box, #sidebar-box #sidebar {
-    -moz-appearance: none !important;
-    background-color: var(--main-tab-bg-color) !important;
-} 
+#bookmarksChildren,
+.sidebar-placesTreechildren,
+.placesTree > treechildren {
+  -moz-appearance: none !important;
+}
+
+#search-box {
+  background-color: var(--url-active-color) !important;
+  border-radius: 8px !important;
+  padding-inline: 4px !important;
+  -moz-appearance: none !important;
+}
+
+:host(:not([searchbutton])) > .textbox-search-sign {
+  padding-left: 4px !important;
+}
+
+#sidebar-header {
+  background-color: var(--main-bg-color) !important;
+  border-bottom: none !important;
+}
+
+#sidebar-box {
+  -moz-appearance: none !important;
+  --sidebar-background-color: transparent !important;
+}
+
+#sidebar-box #sidebar {
+  -moz-appearance: none !important;
+  background-color: var(--main-bg-color) !important;
+}
+
+#sidebar-splitter {
+  background-color: var(--main-bg-color) !important;
+  width: 4px !important;
+  border: none !important;
+}

@@ -2,10 +2,9 @@
 /* @import url("themes/breeze-dark.css"); */
 /* @import url("themes/dark.css"); */
 /* @import url("themes/firefox.css"); */
+@import url("themes/moonlight.css");
 /* @import url("themes/light.css"); */
 /* @import url("themes/very-dark.css"); */
-@import url("themes/moonlight.css");
-
 
 /* MAIN CSS CUSTOMIZATION*/
 @import url(configuration/main.css);
@@ -13,4 +12,5 @@
 @import url(configuration/urlbar.css);
 @import url(configuration/tabbar.css);
 @import url(configuration/sidebar.css);
-/* @import url(configuration/menus.css); */
+@import url(configuration/icons.css);
+@import url(configuration/menus.css);

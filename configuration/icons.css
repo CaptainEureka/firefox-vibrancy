@@ -1,0 +1,38 @@
+/* Icons customizations */
+
+/* Custom back and forward buttons */
+#back-button {
+  list-style-image: url("../assets/chevron-left.svg") !important;
+}
+
+#forward-button {
+  list-style-image: url("../assets/chevron-right.svg") !important;
+}
+
+#back-button > .toolbarbutton-icon,
+#forward-button > .toolbarbutton-icon {
+  border: none !important;
+  border-radius: 25% !important;
+  padding: 2px !important;
+}
+
+/* Round the toolbarbutton hover */
+.toolbarbutton-1 {
+  border-radius: 25% !important;
+}
+
+#PanelUI-menu-button {
+  list-style-image: url("../assets/dots-vertical.svg") !important;
+}
+
+#PaneUI-menu-button > .toolbarbutton-icon {
+  padding: 2px !important;
+}
+
+#PlacesChevron, #nav-bar-overflow-button {
+  list-style-image: url("../assets/chevrons-right.svg") !important;
+}
+
+#nav-bar-overflow-button > .toolbarbutton-icon {
+  padding: 2px !important;
+}
