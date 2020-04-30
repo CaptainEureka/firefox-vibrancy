@@ -1,9 +1,10 @@
 * { 
     /* LIGHT COLORS */
-    --main-tab-bg-color:        rgba(250, 249, 248, 0.3);
-    --url-mask-color:           rgba(0, 0, 0, 0.1);
+    --main-bg-color:            rgba(250, 249, 248, 0.3);
+    --url-active-color:         rgba(0, 0, 0, 0.1);
     --urlview-color:            rgba(255, 255, 255, 0.15);
     --tab-inactive-bg:          rgba(0,0,0,0.1);
+    --text-color:               rgb(0, 0, 0);
 
     /* SHADOW SETTINGS */
     --urlbar-shadow-color:       66,66,66;
@@ -15,13 +16,9 @@
     --tabbar-shadow-selected:   1px 1px 1px rgba(var(--tabbar-shadow-color),0.25), -1px 1px 1px rgba(var(--tabbar-shadow-color),0.25), 
                                 2px 2px 2px rgba(var(--tabbar-shadow-color),0.20), -2px 2px 2px rgba(var(--tabbar-shadow-color),0.20),
                                 4px 4px 4px rgba(var(--tabbar-shadow-color),0.15), -4px 4px 4px rgba(var(--tabbar-shadow-color),0.15), 
-                                8px 8px 8px rgba(var(--tabbar-shadow-color),0.10), -8px 8px 8px rgba(var(--tabbar-shadow-color),0.10),
-                                16px 16px 16px rgba(var(--tabbar-shadow-color),0.05), -16px 16px 16px rgba(var(--tabbar-shadow-color),0.05);
+                                8px 8px 8px rgba(var(--tabbar-shadow-color),0.10), -8px 8px 8px rgba(var(--tabbar-shadow-color),0.10);
  
     --tabbar-shadow:            inset 0px 1px 1px rgba(var(--tabbar-shadow-color),0.25),
                                 inset 0px 2px 1px rgba(var(--tabbar-shadow-color),0.20),
                                 inset 0px 4px 1px rgba(var(--tabbar-shadow-color),0.15);
-
-    --back-button-url: url("../assets/left-arrow-light.svg");
-    --forward-button-url: url("../assets/right-arrow-light.svg");
 }

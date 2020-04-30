@@ -1,9 +1,10 @@
 * {
     /* BREEZE DARK COLORS*/
-    --main-tab-bg-color:        rgba(49, 54, 59, 0.8);
-    --url-mask-color:           rgba(255, 255, 255, 0.1);
+    --main-bg-color:            rgba(49, 54, 59, 0.8);
+    --url-active-color:         rgba(255, 255, 255, 0.1);
     --urlview-color:            rgba(26, 28, 31, 0.7);
-    --tab-inactive-bg:          rgba(0,0,0,0.15);
+    --tab-inactive-bg:          rgba(0, 0, 0, 0.15);
+    --text-color:               rgb(245, 245, 245);
 
     /* SHADOW SETTINGS */
     --urlbar-shadow-color:      22,22,22;
@@ -22,7 +23,4 @@
     --tabbar-shadow:            inset 0px 1px 1px rgba(var(--tabbar-shadow-color),0.15),
                                 inset 0px 2px 1px rgba(var(--tabbar-shadow-color),0.10),
                                 inset 0px 4px 1px rgba(var(--tabbar-shadow-color),0.05);
-
-    --back-button-url: url("../assets/left-arrow.svg");
-    --forward-button-url: url("../assets/right-arrow.svg");
 }

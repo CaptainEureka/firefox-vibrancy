@@ -16,13 +16,13 @@
   --toolbarbutton-hover-background:           var(--url-active-color) !important;
   --toolbarbutton-active-background:          rgba(200,211,245,0.3) !important;
   --sidebar-highlight:                        rgba(200,211,245,0.1) !important;
-  --lwt-toolbar-field-background-color:       #1e2030 !important;
-  --lwt-toolbar-field-focus-background-color: #191b28 !important;
-  --lwt-toolbar-field-highlight:              #c8d3f5 !important;
-  --lwt-toolbar-field-focus-color:            #c8d3f5 !important;
-  --lwt-toolbar-field-focus:                  #1e2030 !important;
-  --lwt-toolbar-field-color:                  #c8d3f5 !important;
-  --in-content-page-background:               #222436 !important;
+  --lwt-toolbar-field-background-color:       var(--main-bg-color) !important;
+  --lwt-toolbar-field-focus-background-color: var(--main-bg-color) !important;
+  --lwt-toolbar-field-highlight:              var(--text-color) !important;
+  --lwt-toolbar-field-focus-color:            var(--text-color) !important;
+  --lwt-toolbar-field-focus:                  var(--main-bg-color) !important;
+  --lwt-toolbar-field-color:                  var(--text-color) !important;
+  --in-content-page-background:               var(--main-bg-color) !important;
 }
 
 #titlebar, window, #main-window, #toolbar-menubar, #TabsToolbar, #PersonalToolbar, #navigator-toolbox{

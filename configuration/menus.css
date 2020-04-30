@@ -1,10 +1,10 @@
 /* Popup Background & Text Color */
 .PanelUI-subView {
   --arrowpanel-background: var(--main-bg-color) !important;
-  --arropanel-color: #C8D3F5 !important;
-  --lwt-accent-color: #131421 !important;
-  --lwt-text-color: #C8D3F5 !important;
-  color: #C8D3F5 !important;
+  --arropanel-color: var(--text-color) !important;
+  --lwt-accent-color: var(--main-bg-color) !important;
+  --lwt-text-color: var(--text-color) !important;
+  color: var(--text-color) !important;
 }
 
 /* Hide Non-Required Options */
@@ -20,19 +20,19 @@
 }
 
 .panel-arrowbox {
-  fill: #131421 !important;
+  fill: var(--main-bg-color) !important;
   display: none !important;
 }
 
 .subviewbutton:hover,
 .subviewbutton:active,
 .subviebutton:focus {
-  background-color: #383e5c !important;
+  background-color: rgba(255, 255, 255, 0.15) !important;
   transition: background-color 100ms ease-out !important;
 }
 
 #appMenu-library0button .toolbarbutton-icon {
-  fill: #C8D3F5 !important;
+  fill: var(--text-color) !important;
 }
 
 menupopup > menuitem:last-child {
@@ -42,13 +42,13 @@ menupopup > menuitem:last-child {
 
 menupopup > menuitem,
 #context-navigation {
-  color: #C8D3F5 !important;
+  color: var(--text-color) !important;
 }
 
 menupopup > menuitem:hover,
 menupopup > menuitem:focus,
 menupopup > menuitem:active,
 #context-navigation {
-  background-color: #131421 !important;
+  background-color: var(--main-bg-color) !important;
 }
 menupopup > menuitem:active,
