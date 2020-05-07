@@ -1,3 +1,7 @@
+## NOTE:
+I am aware Firefox 77 breaks `urlbar.css` I recommend disabling it in `userChrome.css` or sticking to Firefox 76 until I find a fix. 
+Seems like Mozilla is proceeding with the awful design of the "breakout" urlbar...
+
 ## Firefox Vibrancy
 
 This is an attempt to recreate MacOS' Firefox vibrancy
